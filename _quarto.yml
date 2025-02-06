@@ -1,0 +1,28 @@
+project:
+  type: website
+  output-dir: "docs"
+
+website:
+  title: "Richard White"
+  navbar:
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Blog"
+        file: blog.qmd
+      - text: "CV"
+        file: cv.qmd
+      
+    right:
+      - icon: github
+        href: https://github.com/richysix
+      - icon: envelope-at
+        href: mailto:rich.white@cantab.net
+format:
+  html:
+    theme:
+      - cosmo
+    css: styles.css
+
+
+
