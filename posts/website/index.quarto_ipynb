@@ -1,0 +1,53 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Making this website\"\n",
+        "---\n",
+        "\n",
+        "\n",
+        "The initial steps are from this YouTube [tutorial](https://www.youtube.com/watch?v=OlvO-EG-P60).\n",
+        "Once the initial set up was done, I wanted to remove the link to the bin fire that is Twitter and add a link to my [ORCiD](https://orcid.org/) page. This has a list of my publications. \n",
+        "The ORCiD icon is not in the standard bootstrap icons, but is provided by in the set of free [FontAwesome](https://fontawesome.com/search?q=orcid&o=r&ic=free) icons. \n",
+        "So I installed the Quarto [Font Awesome extension](https://github.com/quarto-ext/fontawesome)\n",
+        "\n",
+        "```\n",
+        "quarto add quarto-ext/fontawesome\n",
+        "```\n",
+        "\n",
+        "The ORCiD logo is in the brands set, so the shortcode for it is:\n",
+        "\n",
+        "\n",
+        "```{markdown}\n",
+        "#! label: orcid-shortcode\n",
+        "#! \n",
+        "{{< fa brands orcid >}}\n",
+        "```\n",
+        "\n",
+        "\n",
+        "A slight wrinkle is that instead of using the icon key as in the github and twitter examples, you need to use the text key, as explained [here](https://github.com/quarto-dev/quarto-cli/discussions/7640).\n",
+        "\n",
+        "So the yaml looks like this:\n",
+        "```\n",
+        "    - text: \"{{< fa brands orcid >}} ORCiD\"\n",
+        "      href: https://orcid.org/0000-0003-1842-412X\n",
+        "```\n",
+        "\n",
+        "And it looks like this: ![](orcid-logo.png)\n"
+      ],
+      "id": "3fd15f71"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

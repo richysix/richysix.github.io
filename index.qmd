@@ -9,7 +9,6 @@ about:
       href: https://github.com/richysix
     - text: "{{< fa brands orcid >}} ORCiD"
       href: https://orcid.org/0000-0003-1842-412X
-
 ---
 
 I am a bioinformatician in the [Busch Lab](buschlab.org) at Queen Mary University of London and have a PhD in developmental biology from the University of London.
