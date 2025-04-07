@@ -18,6 +18,8 @@ website:
         href: https://github.com/richysix
       - icon: envelope-at
         href: mailto:rich.white@cantab.net
+      - text: "{{< fa brands bluesky >}}"
+        href: https://bsky.app/profile/richysix.bsky.social
 format:
   html:
     theme:

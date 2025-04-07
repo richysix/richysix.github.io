@@ -78,6 +78,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/bootstrap/bootstrap-dark-fdf986989e2058d46a90f864900247d8.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -151,6 +153,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </i> 
 <span class="menu-text"></span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://bsky.app/profile/richysix.bsky.social"> 
+<span class="menu-text"><i class="fa-brands fa-bluesky" aria-label="bluesky"></i></span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -210,16 +216,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>The initial steps are from this YouTube <a href="https://www.youtube.com/watch?v=OlvO-EG-P60">tutorial</a>.</p>
-<p>Briefly, I created a new Quarto Blog project in Rstudio, which creates a set of template files to start with. I renamed the <code>index.qmd</code> file to <code>blog.qmd</code> and the <code>about.qmd</code> file to <code>index.qmd</code>. Then I updated the <code>_quarto.yml</code> file to add a nav bar to the left hand side. And I removed the example blog posts as well.</p>
-<p>Once the initial set up was done, I wanted to remove the link to the bin fire that is Twitter and add a link to my <a href="https://orcid.org/0000-0003-1842-412X">ORCiD</a> page. This has a list of my publications. The ORCiD icon is not in the standard bootstrap icons, but is provided in the set of free <a href="https://fontawesome.com/search?q=orcid&amp;o=r&amp;ic=free">FontAwesome</a> icons. So I installed the Quarto <a href="https://github.com/quarto-ext/fontawesome">Font Awesome extension</a></p>
+<p>Briefly, I created a new Quarto Blog project in Rstudio, which creates a set of template files to start with. The <code>index.qmd</code> file is formatted as a blog, so I renamed it to <code>blog.qmd</code>. Then I renamed the <code>about.qmd</code> file to <code>index.qmd</code> to use as the site home page. Then I updated the <code>_quarto.yml</code> file to add a nav bar to the left hand side as shown in the video. And I removed the example blog posts as well. I also added a line to change the directory where the website is created when it is rendered. This is done by adding this line to the project section of <code>_quarto.yml</code></p>
+<pre><code>  output-dir: "docs"</code></pre>
+<p>Now, when I render the website, it is created in a <code>docs</code> folder. The default theme is <a href="https://bootswatch.com/cosmo/">Cosmo</a>, which I kept, but I also added a optional dark theme, <a href="https://bootswatch.com/superhero/">Superhero</a></p>
+<p>Once the initial set up was done, I set about customising the <code>Home</code> page by editing the <code>index.qmd</code> file.</p>
+<p>First, I added a profile picture. Initially, the <code>index.qmd</code> file has a default profile picture <code>profile.jpg</code>. I created an <code>assets</code> folder and an <code>images</code> folder within that. In there, I put a picture of me named <code>profile.jpg</code> and I changed the filename in the YAML to <code>assets/images/profile.jpg</code>.</p>
+<p>Then in the <code>index.qmd</code> file, I added some text about me and some images. The images were also placed in the <code>assets/images</code> folder. An image is normally rendered as a block element on its own line, but I wanted to have all three on the same line. So, I put them inside a div element using</p>
+<pre><code>::: {#example-plots}
+![](assets/images/zfs-fig1b.png){width=30%}
+![](assets/images/top1000-var-high-res.png){width=30%}
+![](assets/images/shigella-heatmap.png){width=30%}
+:::</code></pre>
+<p>I made sure the images all fitted by adding <code>{width=30%}</code></p>
+<p>Finally,I wanted to remove the link to the bin fire that is Twitter and change it to Bluesky and add a link to my <a href="https://orcid.org/0000-0003-1842-412X">ORCiD</a> page. This has a list of my publications. The Bluesky and ORCiD icons are not in the standard bootstrap icons, but are provided in the set of free <a href="https://fontawesome.com/search?q=orcid&amp;o=r&amp;ic=free">FontAwesome</a> icons. So I installed the Quarto <a href="https://github.com/quarto-ext/fontawesome">Font Awesome extension</a></p>
 <pre><code>quarto add quarto-ext/fontawesome</code></pre>
-<p>The ORCiD logo is in the brands set, so the shortcode for it is:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>{{&lt; fa brands orcid &gt;}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The Bluesky and ORCiD logos are in the brands set, so the shortcodes for them are:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>{{&lt; fa brands bluesky &gt;}}</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>{{&lt; fa brands orcid &gt;}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>A slight wrinkle is that instead of using the icon key as in the github and twitter examples, you need to use the text key, as explained <a href="https://github.com/quarto-dev/quarto-cli/discussions/7640">here</a>.</p>
-<p>So the yaml looks like this:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="in">    - text: "{{&lt; fa brands orcid &gt;}} ORCiD"</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="in">      href: https://orcid.org/0000-0003-1842-412X</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>And the button looks like this: <img src="orcid-logo.png" class="img-fluid"></p>
+<p>So the yaml in the frontmatter of the <code>index.qmd</code> file looks like this:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Richard White"</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> assets/images/profile.jpg</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="an">about:</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  template: jolla</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  links:</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>icon: github</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>      text: Github</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>      href: https://github.com/richysix</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>text: "{{&lt; fa brands bluesky &gt;}} Bluesky"</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>      href: https://bsky.app/profile/richysix.bsky.social</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>text: "{{&lt; fa brands orcid &gt;}} ORCiD"</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>      href: https://orcid.org/0000-0003-1842-412X</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>And the buttons look like this:</p>
+<p><img src="orcid-logo.png" class="img-fluid"> <img src="bluesky-logo.png" class="img-fluid"></p>
+<p>There are similar links in the <code>_quarto.yml</code> file for the nav bar.</p>
 
 
 

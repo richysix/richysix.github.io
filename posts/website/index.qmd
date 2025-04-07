@@ -13,31 +13,81 @@ categories:
 The initial steps are from this YouTube [tutorial](https://www.youtube.com/watch?v=OlvO-EG-P60).
 
 Briefly, I created a new Quarto Blog project in Rstudio, which creates a set of 
-template files to start with. I renamed the `index.qmd` file to `blog.qmd` and 
-the `about.qmd` file to `index.qmd`. Then I updated the `_quarto.yml` file to 
-add a nav bar to the left hand side. And I removed the example blog posts as well.
+template files to start with. The `index.qmd` file is formatted as a blog, so I 
+renamed it to `blog.qmd`. Then I renamed the `about.qmd` file to `index.qmd` to 
+use as the site home page. Then I updated the `_quarto.yml` file to 
+add a nav bar to the left hand side as shown in the video. And I removed the 
+example blog posts as well. I also added a line to change the directory where 
+the website is created when it is rendered.
+This is done by adding this line to the project section of `_quarto.yml`
+```
+  output-dir: "docs"
+```
 
-Once the initial set up was done, I wanted to remove the link to the bin fire that is Twitter and add a link to my [ORCiD](https://orcid.org/0000-0003-1842-412X) page. This has a list of my publications. 
-The ORCiD icon is not in the standard bootstrap icons, but is provided in the set of free [FontAwesome](https://fontawesome.com/search?q=orcid&o=r&ic=free) icons. 
+Now, when I render the website, it is created in a `docs` folder.
+The default theme is [Cosmo](https://bootswatch.com/cosmo/), which I kept, but I
+also added a optional dark theme, [Superhero](https://bootswatch.com/superhero/)
+
+Once the initial set up was done, I set about customising the `Home` page by 
+editing the `index.qmd` file.
+
+First, I added a profile picture. Initially, the `index.qmd` file has a default
+profile picture `profile.jpg`. I created an `assets` folder and an `images` 
+folder within that. In there, I put a picture of me named `profile.jpg` and I 
+changed the filename in the YAML to `assets/images/profile.jpg`.
+
+Then in the `index.qmd` file, I added some text about me and some images.
+The images were also placed in the `assets/images` folder. An image is normally
+rendered as a block element on its own line, but I wanted to have all three on 
+the same line. So, I put them inside a div element using
+```
+::: {#example-plots}
+![](assets/images/zfs-fig1b.png){width=30%}
+![](assets/images/top1000-var-high-res.png){width=30%}
+![](assets/images/shigella-heatmap.png){width=30%}
+:::
+```
+I made sure the images all fitted by adding `{width=30%}`
+
+Finally,I wanted to remove the link to the bin fire that is Twitter and change 
+it to Bluesky and add a link to my [ORCiD](https://orcid.org/0000-0003-1842-412X) 
+page. This has a list of my publications. The Bluesky and ORCiD icons are not 
+in the standard bootstrap icons, but are provided in the set of free [FontAwesome](https://fontawesome.com/search?q=orcid&o=r&ic=free) icons. 
 So I installed the Quarto [Font Awesome extension](https://github.com/quarto-ext/fontawesome)
 
 ```
 quarto add quarto-ext/fontawesome
 ```
 
-The ORCiD logo is in the brands set, so the shortcode for it is:
+The Bluesky and ORCiD logos are in the brands set, so the shortcodes for them are:
 
 ```markdown
+{{{< fa brands bluesky >}}}
 {{{< fa brands orcid >}}}
 ```
 
-A slight wrinkle is that instead of using the icon key as in the github and twitter examples, you need to use the text key, as explained [here](https://github.com/quarto-dev/quarto-cli/discussions/7640).
+A slight wrinkle is that instead of using the icon key as in the github and 
+twitter examples, you need to use the text key, as explained [here](https://github.com/quarto-dev/quarto-cli/discussions/7640).
 
-So the yaml looks like this:
+So the yaml in the frontmatter of the `index.qmd` file looks like this:
 ```markdown
+title: "Richard White"
+image: assets/images/profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/richysix
+    - text: "{{{< fa brands bluesky >}}} Bluesky"
+      href: https://bsky.app/profile/richysix.bsky.social
     - text: "{{{< fa brands orcid >}}} ORCiD"
       href: https://orcid.org/0000-0003-1842-412X
 ```
 
-And the button looks like this: ![](orcid-logo.png)
+And the buttons look like this: 
 
+![](orcid-logo.png)
+![](bluesky-logo.png)
+
+There are similar links in the `_quarto.yml` file for the nav bar.
