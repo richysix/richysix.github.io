@@ -222,12 +222,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Once the initial set up was done, I set about customising the <code>Home</code> page by editing the <code>index.qmd</code> file.</p>
 <p>First, I added a profile picture. Initially, the <code>index.qmd</code> file has a default profile picture <code>profile.jpg</code>. I created an <code>assets</code> folder and an <code>images</code> folder within that. In there, I put a picture of me named <code>profile.jpg</code> and I changed the filename in the YAML to <code>assets/images/profile.jpg</code>.</p>
 <p>Then in the <code>index.qmd</code> file, I added some text about me and some images. The images were also placed in the <code>assets/images</code> folder. An image is normally rendered as a block element on its own line, but I wanted to have all three on the same line. So, I put them inside a div element using</p>
-<pre><code>::: {#example-plots}
+<pre><code>::: {#example-plots style="background-color: #FFFFFF"}
 ![](assets/images/zfs-fig1b.png){width=30%}
 ![](assets/images/top1000-var-high-res.png){width=30%}
 ![](assets/images/shigella-heatmap.png){width=30%}
 :::</code></pre>
-<p>I made sure the images all fitted by adding <code>{width=30%}</code></p>
+<p>I made sure the images all fitted by adding <code>{width=30%}</code>.<br>
+The <code>style="background-color: #FFFFFF"</code> makes sure there is a consistent background in dark mode.</p>
 <p>Finally,I wanted to remove the link to the bin fire that is Twitter and change it to Bluesky and add a link to my <a href="https://orcid.org/0000-0003-1842-412X">ORCiD</a> page. This has a list of my publications. The Bluesky and ORCiD icons are not in the standard bootstrap icons, but are provided in the set of free <a href="https://fontawesome.com/search?q=orcid&amp;o=r&amp;ic=free">FontAwesome</a> icons. So I installed the Quarto <a href="https://github.com/quarto-ext/fontawesome">Font Awesome extension</a></p>
 <pre><code>quarto add quarto-ext/fontawesome</code></pre>
 <p>The Bluesky and ORCiD logos are in the brands set, so the shortcodes for them are:</p>

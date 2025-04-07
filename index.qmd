@@ -21,7 +21,7 @@ In 2011, I made the switch from wet lab to bioinformatics and joined the Zebrafi
 
 I write in R, Python and Perl and I love making plots.
 
-::: {#example-plots}
+::: {#example-plots style="background-color: #FFFFFF"}
 
 ![](assets/images/zfs-fig1b.png){width=30%}
 ![](assets/images/top1000-var-high-res.png){width=30%}

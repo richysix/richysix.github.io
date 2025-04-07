@@ -41,13 +41,15 @@ The images were also placed in the `assets/images` folder. An image is normally
 rendered as a block element on its own line, but I wanted to have all three on 
 the same line. So, I put them inside a div element using
 ```
-::: {#example-plots}
+::: {#example-plots style="background-color: #FFFFFF"}
 ![](assets/images/zfs-fig1b.png){width=30%}
 ![](assets/images/top1000-var-high-res.png){width=30%}
 ![](assets/images/shigella-heatmap.png){width=30%}
 :::
 ```
-I made sure the images all fitted by adding `{width=30%}`
+I made sure the images all fitted by adding `{width=30%}`.  
+The `style="background-color: #FFFFFF"` makes sure there is a consistent 
+background in dark mode.
 
 Finally,I wanted to remove the link to the bin fire that is Twitter and change 
 it to Bluesky and add a link to my [ORCiD](https://orcid.org/0000-0003-1842-412X) 
