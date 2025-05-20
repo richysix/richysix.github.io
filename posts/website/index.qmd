@@ -1,6 +1,6 @@
 ---
 title: "Making this website"
-date: "2024-02-11"
+date: "2025-02-11"
 author: "Richard White"
 description: "A guide to creating a personal portfolio website."
 image: website-banner.png
