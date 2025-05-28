@@ -5,5 +5,11 @@
       "/posts/sample-cor-matrix/index.html",
       "/posts/website/index.html"
     ]
+  },
+  {
+    "listing": "/portfolio.html",
+    "items": [
+      "/portfolio/pca-plot/index.html"
+    ]
   }
 ]

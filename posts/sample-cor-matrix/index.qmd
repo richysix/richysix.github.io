@@ -299,7 +299,7 @@ plot_spacer() + sample_strip_horiz + plot_spacer() +
 ```
 
 I made this figure 9 years ago. If I was making it today, I would use a 
-different colour scheme. That's because this colour scheme is not preceptually
+different colour scheme. That's because this colour scheme is not perceptually
 uniform. 
 So, these days I would use the [viridis](https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html) 
 colour map, which is included in `ggplot2`. We just use `scale_fill_viridis_c`
