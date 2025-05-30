@@ -1,0 +1,15 @@
+{
+  "hash": "acf22f4fbb6ffe469ca07ea59c7d329e",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"rnaseqVis Shiny app\"\ndate: \"2025-05-27\"\nauthor: \"Richard White\"\ndescription: \"A Shiny app for displaying the results from an RNA-seq analysis\"\nimage: \"subset-heatmap.png\"\ncategories: \n  - \"R Shiny\"\n  - \"PCA\"\n  - \"Data Visualisation\"\n  - \"ggplot2\"\n  - \"RNA-seq\"\n---\n\n::: {.cell}\n\n:::\n\n\n\n![](subset-heatmap.png)\n\nThis is a Shiny app that I made to view the results of RNA-seq data. It produces \nheatmaps and count plots to show the expresssion levels of groups or individual \ngenes. This is a recent update of an older version that I made to learn using \nShiny modules.\nYou can try it out on [Posit Connect](https://019658d9-521a-3d9f-fd3f-8d5cd9302c19.share.connect.posit.cloud/)\n\nThe app has 4 tabs: Input, Heatmap, Count Plot, and Help\n\n## Help\n\nThe help page details the format of the input files and what options can be set.\n\n## Input\n\nThe input tab has input for uploading the input data files (sample data and \ncount data). It also has checkboxes to use some test data included with the app \nand to indicate that the uploaded data represents Transcripts per Million (TPM) \nnot count data. It is also possible to upload a separate file of Ensembl gene \nids to subset the data to and only display the subset in the heatmap.\n\n![](input.png){fig.alt=\"Image of a web page with input boxes on the left and tables of data displayed on the right\"}\n\n## Heatmap\n\nThe heatmap tab produces a heatmap plot with sample displayed along the X-axis \nand Genes on the Y-axis. The are various options for scaling and clustering the \ndata.\n\n![](heatmap.png){fig.alt=\"Radio buttons and checkboxes for different scaling and \nclustering options above a gene expression heatmap\"}\n\n## Count Plot\n\nThis tab allows you to select an individual gene and see a scatterplot showing \nthe samples along the X-axis, grouped by a variable in the sample metadata \n(e.g. stage or genotype), with the normalised expression counts on the Y-axis.\nIf there are categorical variables in the metadata it is also possible to \nindicate that with shapes on the plot.\n\n![](count_plot.png){fig.alt=\"A sidebar of pulldown menus for selecting the plot options \nwith an x-y scatterplot showing the expression of a gene over time. \nThe values peak in the middle of the timeframe\"}\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

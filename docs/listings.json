@@ -9,6 +9,7 @@
   {
     "listing": "/portfolio.html",
     "items": [
+      "/portfolio/rnaseq-vis/index.html",
       "/portfolio/pca-plot/index.html"
     ]
   }
