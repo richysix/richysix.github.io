@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Richard White">
+<meta name="dcterms.date" content="2025-09-30">
+<meta name="description" content="A Shiny app for RNA-seq from mouse mutants with developmental delay">
 
-<title>Portfolio – Richard White</title>
+<title>Baseline compare – Richard White</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,28 +26,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-fdf986989e2058d46a90f864900247d8.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-fdf986989e2058d46a90f864900247d8.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,77 +73,19 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Richard White</span>
     </a>
   </div>
@@ -153,19 +96,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./portfolio.html" aria-current="page"> 
+    <a class="nav-link" href="../../portfolio.html"> 
 <span class="menu-text">Porfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
+    <a class="nav-link" href="../../cv.html"> 
 <span class="menu-text">CV</span></a>
   </li>  
 </ul>
@@ -195,201 +138,116 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Portfolio</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">Baseline compare</h1>
+                  <div>
+        <div class="description">
+          A Shiny app for RNA-seq from mouse mutants with developmental delay
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">R Shiny</div>
+                <div class="quarto-category">RNA-seq</div>
+                <div class="quarto-category">Data Visualisation</div>
+                <div class="quarto-category">DESeq2</div>
+                <div class="quarto-category">ggplot2</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Richard White </p>
+            </div>
+    </div>
       
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">September 30, 2025</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="REVTZXEy">DESeq2 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMFZpc3VhbGlzYXRpb24=">Data Visualisation <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UENB">PCA <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UiUyMFNoaW55">R Shiny <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Uk5BLXNlcQ==">RNA-seq <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Z2dwbG90Mg==">ggplot2 <span class="quarto-category-count">(3)</span></div></div></div>
+    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
+<p>This is a Shiny app that I made to go along with a <a href="https://www.nature.com/articles/s41467-019-10642-x">paper</a> that we wrote in the <a href="https://www.buschlab.org">Busch lab</a> as part of the <a href="https://www.sanger.ac.uk/collaboration/deciphering-mechanisms-developmental-disorders-dmdd/">Deciphering the Mechanisms of Developmental Disorders</a> project. You can try it out on <a href="https://richysix.shinyapps.io/baseline_compare/">shinyapps.io</a>. The <a href="https://github.com/richysix/baselineCompare">code</a> is on github.</p>
+<p>DMDD was a project to study embryonic-lethal mouse gene lines, to identify critical genes for embryo development and survival. Our part of the project was to analyse the RNA-seq data produced for each mutant line. One problem was that a significant portion of the lines were affected by developmental delay, which is a common issue. In these cases, the homozygous mutants appear much young than the wild-type and heterozygous siblings from the same litter (as assessed by somite number). This makes it difficult to determine whether genes are differentially expressed because of the effect of the mutation or because of the delay. We developed a procedure to try and mitigate this problem using a large RNA-seq dataset of wild-type embryos, covering the span of the ages of the embryos in the mutant lines.</p>
+<p>To allow other people to use this baseline dataset to analyse their own mutant line RNA-seq data, I created a Shiny app.</p>
+<p>The app accepts RNA-seq count data as two files, a count file and a sample file. The count file needs a columns for the gene identifiers and a column for the count data for each sample. The samples file contains metadata about each sample. The right-hand sidebar panel allows you to set various parameters and to start the analysis. There is a progress panel which prints the output from DESeq2 as the analysis can take some time.</p>
+<p><img src="deseq2-progress.png" class="img-fluid" alt="Screenshot of the Baseline Compare Shiny app. It's a page with several tabs. The one shown has a right-hand sidebar with various inputs and radio buttons. The left-hand side shows the output from running DESeq2 in a panel labelled 'Progress'"></p>
+<p>The first thing it does is run a Principal Component Analysis (PCA) with the input data plus the baseline samples. This allows the user to check whether their data is compatible with the baseline. If the wild-type samples in the experimental data cluster significantly away from the baseline then this is analysis is not appropriate.</p>
+<p>The <strong><em>PCA</em></strong> tab shows two plots. The first shows the experimental samples and <strong>only</strong> the baseline samples with matching somite stages. The second includes <strong>all</strong> the baseline samples</p>
+<p><img src="pca-1.png" class="img-fluid" data-fig.alt="A screenshot showing the PCA tab. The PCA plot is an x-y scatterplot and shows that the wild-type samples cluster with the appropriately staged-matched baseline samples"></p>
+<p>It then runs differential expression analysis using the <code>DESeq2</code> package with three different sets of samples and model.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 22%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Analysis Set</th>
+<th>Samples</th>
+<th>DESeq2 model</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Experiment Only</td>
+<td>Experimental Data only</td>
+<td>counts ~ (sex +) condition</td>
+</tr>
+<tr class="even">
+<td>Experiment + Baseline</td>
+<td>Experimental Data and stage-matched Baseline samples</td>
+<td>counts ~ (sex +) condition</td>
+</tr>
+<tr class="odd">
+<td>Experiment + Baseline with Stage</td>
+<td>Experimental Data and stage-matched Baseline samples</td>
+<td>counts ~ (sex +) stage + condition</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="deseq-samples-models.png" title="Diagram of different analysis sets" class="img-fluid figure-img" alt="A Venn diagram showing the sample sets and model formulae for the three analysis sets."></p>
+<figcaption>DESeq2 analysis sets</figcaption>
+</figure>
+</div>
+<p>The differentially expressed (DE) genes are overlapped and specific subsets are assigned to 4 different categories of response as shown below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="deseq-results-sets.png" title="Diagram of DESeq2 overlaps" class="img-fluid figure-img" alt="Four Venn diagrams showing how the results sets are made up. Mutant Response is the intersection of Experiment + Baseline and Experiment + Baseline with Stage. Delay is those genes in both Experiment Only and Experiment + Baseline, but not in Experiment + Baseline with Stage. No Delay is genes in Experiment + Baseline with Stage and not in the other two. Discard is genes in either Experiment Only OR Experiment + Baseline, but NOT both and also not in Experiment + Baseline with Stage"></p>
+<figcaption>DESeq2 results sets</figcaption>
+</figure>
+</div>
+<p>The <strong><em>Results</em></strong> tab has buttons for each of the four results sets. Clicking the buttons shows a table of the DE genes for that set sorted by adjusted p value.</p>
+<p><img src="results.png" class="img-fluid" alt="A screenshot of the Results tab. The main content is a DataTables table with each row being a different gene and containing columns such as Ensembl gene id, Gene name, log 2 fold change and adjusted p value"></p>
+<p>If you click on a row in the results table it takes you to the <strong><em>Count Plot</em></strong> tab which has an x-y scatter plot of the Normalised Counts for that gene in the experimental samples and the matching baseline samples. There is also a button to download a copy of the plot.</p>
+<p><img src="counts-neurl1a.png" class="img-fluid" alt="An x-y scatterplot with samples on the x-axis and normalised counts on the y-axis. The points are coloured by somite stage and show that the homozygous mutant samples have lower expression of the Neurl1a gene than the wild-type samples, which are similar in level to all the baseline samples"></p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-title" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Author
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="UiUyMFNoaW55JTJDUk5BLXNlcSUyQ0RhdGElMjBWaXN1YWxpc2F0aW9uJTJDREVTZXEyJTJDZ2dwbG90Mg==" data-listing-date-sort="1759186800000" data-listing-file-modified-sort="1759339894861" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="773">
-<div class="thumbnail">
-<p><a href="./portfolio/baseline-compare/index.html" class="no-external"></a></p><a href="./portfolio/baseline-compare/index.html" class="no-external">
-<p><img loading="lazy" src="./portfolio/baseline-compare/example_count_plot.png" class="thumbnail-image"></p>
-</a><p><a href="./portfolio/baseline-compare/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./portfolio/baseline-compare/index.html" class="no-external">Baseline compare</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./portfolio/baseline-compare/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UiUyMFNoaW55'); return false;">
-R Shiny
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Uk5BLXNlcQ=='); return false;">
-RNA-seq
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFZpc3VhbGlzYXRpb24='); return false;">
-Data Visualisation
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('REVTZXEy'); return false;">
-DESeq2
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Z2dwbG90Mg=='); return false;">
-ggplot2
-</div>
-</div>
-<div class="listing-description">
-<a href="./portfolio/baseline-compare/index.html" class="no-external">A Shiny app for RNA-seq from mouse mutants with developmental delay</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./portfolio/baseline-compare/index.html" class="no-external">
-<div class="listing-date">
-2025-09-30
-</div>
-<div class="listing-author">
-Richard White
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="UiUyMFNoaW55JTJDRGF0YSUyMFZpc3VhbGlzYXRpb24lMkNnZ3Bsb3QyJTJDUk5BLXNlcQ==" data-listing-date-sort="1748559600000" data-listing-file-modified-sort="1748605382648" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="299">
-<div class="thumbnail">
-<p><a href="./portfolio/rnaseq-vis/index.html" class="no-external"></a></p><a href="./portfolio/rnaseq-vis/index.html" class="no-external">
-<p><img loading="lazy" src="./portfolio/rnaseq-vis/subset-heatmap.png" class="thumbnail-image"></p>
-</a><p><a href="./portfolio/rnaseq-vis/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./portfolio/rnaseq-vis/index.html" class="no-external">rnaseqVis Shiny app</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./portfolio/rnaseq-vis/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UiUyMFNoaW55'); return false;">
-R Shiny
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFZpc3VhbGlzYXRpb24='); return false;">
-Data Visualisation
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Z2dwbG90Mg=='); return false;">
-ggplot2
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Uk5BLXNlcQ=='); return false;">
-RNA-seq
-</div>
-</div>
-<div class="listing-description">
-<a href="./portfolio/rnaseq-vis/index.html" class="no-external">A Shiny app for displaying the results from an RNA-seq analysis</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./portfolio/rnaseq-vis/index.html" class="no-external">
-<div class="listing-date">
-2025-05-30
-</div>
-<div class="listing-author">
-Richard White
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="UiUyMFNoaW55JTJDUENBJTJDRGF0YSUyMFZpc3VhbGlzYXRpb24lMkNnZ3Bsb3QyJTJDUk5BLXNlcQ==" data-listing-date-sort="1748300400000" data-listing-file-modified-sort="1748445453707" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="518">
-<div class="thumbnail">
-<p><a href="./portfolio/pca-plot/index.html" class="no-external"></a></p><a href="./portfolio/pca-plot/index.html" class="no-external">
-<p><img loading="lazy" src="./portfolio/pca-plot/test-data-default.png" class="thumbnail-image"></p>
-</a><p><a href="./portfolio/pca-plot/index.html" class="no-external"></a></p>
-</div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./portfolio/pca-plot/index.html" class="no-external">PCA Plot Shiny app</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./portfolio/pca-plot/index.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UiUyMFNoaW55'); return false;">
-R Shiny
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UENB'); return false;">
-PCA
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFZpc3VhbGlzYXRpb24='); return false;">
-Data Visualisation
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Z2dwbG90Mg=='); return false;">
-ggplot2
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Uk5BLXNlcQ=='); return false;">
-RNA-seq
-</div>
-</div>
-<div class="listing-description">
-<a href="./portfolio/pca-plot/index.html" class="no-external">A Shiny app for displaying Principal Component Analysis results from an RNA-seq analysis</a>
-</div>
-</div>
-<div class="metadata">
-<a href="./portfolio/pca-plot/index.html" class="no-external">
-<div class="listing-date">
-2025-05-27
-</div>
-<div class="listing-author">
-Richard White
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

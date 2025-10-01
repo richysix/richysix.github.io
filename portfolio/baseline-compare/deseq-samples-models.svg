@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="deseq-samples-models.svg"
+   inkscape:export-filename="deseq-results-sets.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1"
+     inkscape:cx="444.5"
+     inkscape:cy="319"
+     inkscape:window-width="1861"
+     inkscape:window-height="1028"
+     inkscape:window-x="51"
+     inkscape:window-y="1"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="426.0907"
+       y="348.7171"
+       width="30.486572"
+       height="44.253235"
+       id="rect1270" />
+    <rect
+       x="-255.67192"
+       y="42.629593"
+       width="20.537979"
+       height="16.149551"
+       id="rect1240" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g942"
+       transform="translate(-0.38063049,-128.02213)">
+      <circle
+         style="fill:none;stroke:#0073b3;stroke-width:0.705556;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+         id="path234"
+         cx="97.936882"
+         cy="148.5"
+         r="15" />
+      <circle
+         style="fill:none;stroke:#cc6600;stroke-width:0.705556;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+         id="circle929"
+         cx="112.82438"
+         cy="148.5"
+         r="15" />
+      <circle
+         style="fill:none;stroke:#009980;stroke-width:0.705556;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+         id="circle931"
+         cx="105.38063"
+         cy="164.06677"
+         r="15" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#0073b3;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+       x="41.413109"
+       y="7.8715239"
+       id="text1030"><tspan
+         sodipodi:role="line"
+         id="tspan1028"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.88056px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0073b3;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+         x="41.413109"
+         y="7.8715239">Experiment Only</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#0073b3;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+         x="41.413109"
+         y="12.722223"
+         id="tspan1032">Experimental Data only</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#0073b3;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+         x="41.413109"
+         y="17.572924"
+         id="tspan1034">counts ~ condition</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#cc6600;fill-opacity:1;stroke-width:0.264583"
+       x="130.37993"
+       y="7.8715239"
+       id="text1088"><tspan
+         sodipodi:role="line"
+         id="tspan1086"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.88056px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#cc6600;fill-opacity:1;stroke-width:0.264583"
+         x="130.37993"
+         y="7.8715239">Experiment + Baseline</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#cc6600;fill-opacity:1;stroke-width:0.264583"
+         x="130.37993"
+         y="12.722223"
+         id="tspan1090">Experimental Data + </tspan><tspan
+         sodipodi:role="line"
+         style="fill:#cc6600;fill-opacity:1;stroke-width:0.264583"
+         x="130.37993"
+         y="17.572924"
+         id="tspan1094">stage-matche baseline samples</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#cc6600;fill-opacity:1;stroke-width:0.264583"
+         x="130.37993"
+         y="22.423624"
+         id="tspan1092">counts ~ condition</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.88056px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#009980;fill-opacity:1;stroke-width:0.264583"
+       x="73.961334"
+       y="55.380543"
+       id="text1098"><tspan
+         sodipodi:role="line"
+         id="tspan1096"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.88056px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#009980;fill-opacity:1;stroke-width:0.264583"
+         x="73.961334"
+         y="55.380543">Experiment + Baseline with Stage</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#009980;fill-opacity:1;stroke-width:0.264583"
+         x="73.961334"
+         y="60.231243"
+         id="tspan1100">Experimental Data + </tspan><tspan
+         sodipodi:role="line"
+         style="fill:#009980;fill-opacity:1;stroke-width:0.264583"
+         x="73.961334"
+         y="65.08194"
+         id="tspan1102">stage-matched baseline samples</tspan><tspan
+         sodipodi:role="line"
+         style="fill:#009980;fill-opacity:1;stroke-width:0.264583"
+         x="73.961334"
+         y="69.93264"
+         id="tspan1104">counts ~ stage + condition</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text1238"
+       style="font-size:14.6667px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;white-space:pre;shape-inside:url(#rect1240);display:inline" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text1268"
+       style="font-size:14.6667px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;white-space:pre;shape-inside:url(#rect1270);display:inline" />
+  </g>
+</svg>
